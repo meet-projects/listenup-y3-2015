@@ -9,4 +9,5 @@ urlpatterns = patterns('',
     url(r'^signup/$', views.signup, name='signup'),
     url(r'^login/$', views.login, name='login'),
     url(r'^achievements/$', views.achievements, name='achievements'),
+    url(r'^landing/$', views.landing, name='landing'),
 )
