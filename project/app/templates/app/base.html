@@ -1,8 +1,8 @@
 {% load staticfiles %}
 <html lang="en">
 <head>
-	<link rel="stylesheet" type="text/css" href={% static 'app/css/main.css' %}>
-<link rel="stylesheet" type="text/css" href={% static 'app/css/bootstrap/bootstrap.css' %}>
+	<link rel="stylesheet" type="text/css" href='{{STATIC_URL}}app/css/main.css'>
+<link rel="stylesheet" type="text/css" href='{{STATIC_URL}}app/css/bootstrap/bootstrap.css' >
 	<title>
 		{% block title %}
 		{% endblock %}
@@ -12,7 +12,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>I didn't steal this</title>
-    <link href="css/bootstrap.css" rel="stylesheet">
 </head>
 <body>
 	 <nav class="navbar navbar-default" role="navigation">
@@ -63,7 +62,7 @@
   </div><!-- /.container-fluid -->
 </nav>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="{{STATIC_URL}}app/js/bootstrap.min.js"></script>
     <br>
     <br>
   <form action="www.google.com" method="POST or GET">
